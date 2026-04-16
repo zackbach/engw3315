@@ -47,7 +47,9 @@ fugiat nulla pariatur.
 
 ## Curry-Howard Infographic
 
-Put in the infographics here!
+![Propositions as Types](assets/prop-as-type.jpg){: .img-small}
+
+![Proofs as Programs](assets/proof-as-prog.jpg)
 
 ### More commentary
 
@@ -61,9 +63,9 @@ fugiat nulla pariatur.
 
 ## Writing timeline
 
-Embed the PDF with multiple pages here!
+<iframe src="assets/timeline.pdf" width="100%" style="aspect-ratio: 16/9; margin-bottom: 0.25rem;" frameborder="0"></iframe>
 
-Also embed the attached video!
+<iframe width="75%" height="300px" src="https://www.youtube.com/embed/crq0q88R-Uc" style="display: block; margin: 0 auto;" frameborder="0" allowfullscreen></iframe>
 
 ### Commentary
 

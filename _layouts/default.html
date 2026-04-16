@@ -72,7 +72,18 @@
       max-width: 100%;
       height: auto;
       border-radius: 4px;
-      margin: 1.5rem 0;
+      margin: 0.5rem 0;
+    }
+
+    img + img, p:has(img) + p > img {
+      margin-top: 0.25rem;
+    }
+
+    .img-small {
+      max-width: 65%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     iframe, embed, video {
