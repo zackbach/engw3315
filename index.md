@@ -117,7 +117,16 @@ fugiat nulla pariatur.
     return months[m - 1] + ' ' + d;
   }
 
-  const dailyData = Object.entries(daily).sort();
+  // Fill in every day between first and last date
+  const dates = Object.keys(daily).sort();
+  const start = new Date(dates[0] + 'T00:00:00');
+  const end = new Date(dates[dates.length - 1] + 'T00:00:00');
+  const allDays = [];
+  for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
+    const key = d.toISOString().slice(0, 10);
+    allDays.push([key, daily[key] || 0]);
+  }
+
   const weeklyData = Object.entries(weekly).sort();
 
   const datasets = {
@@ -126,8 +135,10 @@ fugiat nulla pariatur.
       values: weeklyData.map(([, v]) => Math.round(v * 10) / 10),
     },
     daily: {
-      labels: dailyData.map(([d]) => formatLabel(d)),
-      values: dailyData.map(([, v]) => Math.round(v * 10) / 10),
+      labels: allDays.map(([d]) => formatLabel(d)),
+      values: allDays.map(([, v]) => Math.round(v * 10) / 10),
+      colors: allDays.map(([, v]) => v > 0 ? 'rgba(74, 111, 165, 0.7)' : 'rgba(74, 111, 165, 0.15)'),
+      borders: allDays.map(([, v]) => v > 0 ? 'rgba(74, 111, 165, 1)' : 'rgba(74, 111, 165, 0.3)'),
     },
   };
 
@@ -175,6 +186,13 @@ fugiat nulla pariatur.
     setTimeout(() => {
       chart.data.labels = datasets[view].labels;
       chart.data.datasets[0].data = datasets[view].values;
+      if (view === 'daily') {
+        chart.data.datasets[0].backgroundColor = datasets.daily.colors;
+        chart.data.datasets[0].borderColor = datasets.daily.borders;
+      } else {
+        chart.data.datasets[0].backgroundColor = 'rgba(74, 111, 165, 0.7)';
+        chart.data.datasets[0].borderColor = 'rgba(74, 111, 165, 1)';
+      }
       chart.update('none');
       canvas.style.opacity = 1;
     }, 150);
