@@ -1,2 +1,6 @@
 title: "Writing Portfolio"
 description: "A collection of writings from this semester."
+exclude:
+  - filter_csv.py
+  - process_chart_data.py
+  - filtered.csv

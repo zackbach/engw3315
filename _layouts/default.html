@@ -118,7 +118,29 @@
       color: #555;
       font-style: italic;
     }
+    /* Chart */
+    .chart-toggle {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 0.95rem;
+      padding: 0.4rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background: #fff;
+      color: #2c2c2c;
+      cursor: pointer;
+    }
+
+    .chart-toggle:hover {
+      background: #f0f0ee;
+    }
+
+    .chart-toggle.active {
+      background: #2c2c2c;
+      color: #fafaf8;
+      border-color: #2c2c2c;
+    }
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
 </head>
 <body>
   <div class="container">
