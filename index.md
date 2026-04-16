@@ -4,6 +4,7 @@ title: "Writing Portfolio"
 author: "Zack Eisbach"
 class: "ENGW 3315"
 ---
+<!-- markdownlint-disable MD033 -->
 
 ## Intro / reflection
 
