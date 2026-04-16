@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <style>
+    /* Reset */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.125rem;
+      line-height: 1.8;
+      color: #2c2c2c;
+      background: #fafaf8;
+      padding: 2rem 1.5rem;
+    }
+
+    .container {
+      max-width: 42rem;
+      margin: 0 auto;
+    }
+
+    /* Title block */
+    .title-block {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .title-block h1 {
+      font-size: 2.75rem;
+      line-height: 1.2;
+      margin-bottom: 0.4rem;
+      color: #1a1a1a;
+    }
+
+    .title-block .byline {
+      font-size: 1.1rem;
+      color: #666;
+      margin: 0.2rem 0;
+    }
+
+    /* Subheadings */
+    h2 {
+      font-size: 1.75rem;
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+      color: #1a1a1a;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+    }
+
+    /* Highlighted text */
+    mark {
+      background: #fff3a8;
+      padding: 0.1em 0.25em;
+      border-radius: 2px;
+    }
+
+    /* Images and embeds */
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin: 1.5rem 0;
+    }
+
+    iframe, embed, video {
+      max-width: 100%;
+      margin: 1.5rem 0;
+    }
+
+    /* Horizontal rule */
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 2.5rem 0;
+    }
+
+    /* Links */
+    a {
+      color: #4a6fa5;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    a:hover {
+      color: #2c4a7c;
+    }
+
+    /* Blockquotes */
+    blockquote {
+      border-left: 3px solid #ccc;
+      padding-left: 1.25rem;
+      margin: 1.5rem 0;
+      color: #555;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title-block">
+      <h1>{{ page.title }}</h1>
+      {% if page.author %}<p class="byline">{{ page.author }}</p>{% endif %}
+      {% if page.class %}<p class="byline">{{ page.class }}</p>{% endif %}
+    </div>
+    {{ content }}
+  </div>
+</body>
+</html>
