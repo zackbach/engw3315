@@ -159,7 +159,8 @@ The amusing illustration you included reminded me of a similar comic, attached
 below, which also demonstrates how one's (financial) preconceptions can impact
 how they react to information. Have you ever found yourself (consciously or
 subconsciously) in a similar position?
-![Stock go up](assets/stock-go-up.jpeg)
+
+![Stock go up](assets/stock-go-up.jpeg){: .img-small}
 {% endcapture %}
 {% include canvas-post.html date="Feb 12 11:43am" body=response_justin %}
 
