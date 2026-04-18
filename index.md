@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Writing Portfolio"
+title: "Reflecting on Visual Compositions"
 author: "Zack Eisbach"
 class: "ENGW 3315"
 ---
@@ -105,123 +105,21 @@ fugiat nulla pariatur.
   <button class="chart-toggle active" id="btn-weekly" onclick="setView('weekly')">Weekly</button>
   <button class="chart-toggle" id="btn-daily" onclick="setView('daily')">Daily</button>
 </div>
-<canvas id="timeChart"></canvas>
+<div id="chartLegend" style="display: flex; justify-content: center; gap: 1rem; font-size: 0.9rem; margin-bottom: 0.5rem; flex-wrap: wrap;">
+  <span style="display: inline-flex; align-items: center; gap: 0.35rem;"><span style="width: 14px; height: 14px; display: inline-block; background: rgba(74,111,165,0.7); border: 1px solid rgba(74,111,165,1);"></span>Hours</span>
+  <span style="display: inline-flex; align-items: center; gap: 0.35rem;"><span style="width: 14px; height: 14px; display: inline-block; background: rgba(45,134,89,0.8); border: 1px solid rgba(45,134,89,1);"></span>Post</span>
+  <span style="display: inline-flex; align-items: center; gap: 0.35rem;"><span style="width: 14px; height: 14px; display: inline-block; background: rgba(212,168,75,0.85); border: 1px solid rgba(180,140,55,1);"></span>Comment</span>
+  <span style="display: inline-flex; align-items: center; gap: 0.35rem;"><span style="width: 14px; height: 14px; display: inline-block; background: rgba(122,90,159,0.8); border: 1px solid rgba(122,90,159,1);"></span>Extra</span>
+</div>
+<div id="chartScroll" style="overflow-x: auto; width: 100%; display: flex; align-items: stretch;">
+  <div id="leftAxisPin" style="position: sticky; left: 0; z-index: 3; background: #fafaf8; flex: 0 0 48px; height: 360px;"></div>
+  <div id="chartInner" style="position: relative; height: 360px; flex: 1 0 auto; min-width: 0;">
+    <canvas id="timeChart"></canvas>
+  </div>
+  <div id="rightAxisPin" style="position: sticky; right: 0; z-index: 3; background: #fafaf8; flex: 0 0 48px; height: 360px;"></div>
+</div>
 
-<script>
-(async function() {
-  const res = await fetch('assets/filtered.csv');
-  const text = await res.text();
-
-  const daily = {};
-  const weekly = {};
-
-  text.trim().split('\n').forEach(line => {
-    const cols = line.split(',');
-    const date = cols[7].trim();
-    const [h, m, s] = cols[11].trim().split(':').map(Number);
-    const hours = h + m / 60 + s / 3600;
-
-    daily[date] = (daily[date] || 0) + hours;
-
-    const dt = new Date(date + 'T00:00:00');
-    const day = dt.getDay();
-    const mondayOffset = day === 0 ? -6 : 1 - day;
-    const monday = new Date(dt);
-    monday.setDate(dt.getDate() + mondayOffset);
-    const weekKey = monday.toISOString().slice(0, 10);
-    weekly[weekKey] = (weekly[weekKey] || 0) + hours;
-  });
-
-  function formatLabel(dateStr) {
-    const [y, m, d] = dateStr.split('-').map(Number);
-    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-    return months[m - 1] + ' ' + d;
-  }
-
-  // Fill in every day between first and last date
-  const dates = Object.keys(daily).sort();
-  const start = new Date(dates[0] + 'T00:00:00');
-  const end = new Date(dates[dates.length - 1] + 'T00:00:00');
-  const allDays = [];
-  for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
-    const key = d.toISOString().slice(0, 10);
-    allDays.push([key, daily[key] || 0]);
-  }
-
-  const weeklyData = Object.entries(weekly).sort();
-
-  const datasets = {
-    weekly: {
-      labels: weeklyData.map(([d]) => 'Wk of ' + formatLabel(d)),
-      values: weeklyData.map(([, v]) => Math.round(v * 10) / 10),
-    },
-    daily: {
-      labels: allDays.map(([d]) => formatLabel(d)),
-      values: allDays.map(([, v]) => Math.round(v * 10) / 10),
-      colors: allDays.map(([, v]) => v > 0 ? 'rgba(74, 111, 165, 0.7)' : 'rgba(74, 111, 165, 0.15)'),
-      borders: allDays.map(([, v]) => v > 0 ? 'rgba(74, 111, 165, 1)' : 'rgba(74, 111, 165, 0.3)'),
-    },
-  };
-
-  const ctx = document.getElementById('timeChart').getContext('2d');
-  const chart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: datasets.weekly.labels,
-      datasets: [{
-        label: 'Hours',
-        data: datasets.weekly.values,
-        backgroundColor: 'rgba(74, 111, 165, 0.7)',
-        borderColor: 'rgba(74, 111, 165, 1)',
-        borderWidth: 1,
-      }],
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          callbacks: {
-            label: (ctx) => {
-              const hrs = ctx.parsed.y;
-              const mins = Math.round(hrs * 60);
-              return hrs >= 1 ? hrs.toFixed(1) + ' hrs (' + mins + ' min)' : mins + ' min';
-            },
-          },
-        },
-      },
-      scales: {
-        y: {
-          beginAtZero: true,
-          title: { display: true, text: 'Hours' },
-        },
-      },
-    },
-  });
-
-  const canvas = document.getElementById('timeChart');
-  canvas.style.transition = 'opacity 0.15s';
-
-  window.setView = function(view) {
-    canvas.style.opacity = 0;
-    setTimeout(() => {
-      chart.data.labels = datasets[view].labels;
-      chart.data.datasets[0].data = datasets[view].values;
-      if (view === 'daily') {
-        chart.data.datasets[0].backgroundColor = datasets.daily.colors;
-        chart.data.datasets[0].borderColor = datasets.daily.borders;
-      } else {
-        chart.data.datasets[0].backgroundColor = 'rgba(74, 111, 165, 0.7)';
-        chart.data.datasets[0].borderColor = 'rgba(74, 111, 165, 1)';
-      }
-      chart.update('none');
-      canvas.style.opacity = 1;
-    }, 150);
-    document.getElementById('btn-weekly').classList.toggle('active', view === 'weekly');
-    document.getElementById('btn-daily').classList.toggle('active', view === 'daily');
-  };
-})();
-</script>
+<script src="assets/chart.js"></script>
 
 ### Still not sure about sub-headings
 
