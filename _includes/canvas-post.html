@@ -2,10 +2,10 @@
   <div class="canvas-post__header">
     <div class="canvas-post__avatar">
       {% assign avatar = include.avatar | default: 'assets/avatar.png' %}
-      {% if avatar %}<img src="{{ avatar }}" alt="{{ include.name | default: 'Zack Eisbach' }}">{% else %}{{ include.initials | default: 'ZE' }}{% endif %}
+      {% if avatar %}<img src="{{ avatar }}" alt="{{ include.name | default: 'Zachary Eisbach' }}">{% else %}{{ include.initials | default: 'ZE' }}{% endif %}
     </div>
     <div class="canvas-post__meta">
-      <div class="canvas-post__name">{{ include.name | default: 'Zack Eisbach' }}</div>
+      <div class="canvas-post__name">{{ include.name | default: 'Zachary Eisbach' }}</div>
       <div class="canvas-post__time">{{ include.date }}</div>
     </div>
   </div>

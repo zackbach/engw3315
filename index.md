@@ -96,6 +96,38 @@ fugiat nulla pariatur.
 
 Two separate responses going in here probably
 
+{% capture response_mia %}
+
+<mark class="purple">@Mia Yim</mark> I think this is a very reasonable and
+nuanced take. I agree that LLM-generated images can act as a means by which
+humans communicate emotions, thus serving as an artistic medium. The most
+compelling example I can point to is [this
+tweet](https://x.com/DonnelVillager/status/1741394747594318275), which uses an
+AI generated image to (ironically enough) critique the use of AI for art.
+Donnel, the original poster, uses AI to "complete" Keith Haring's [Unfinished
+Painting](https://en.wikipedia.org/wiki/Unfinished_Painting)—a painting created
+by Haring near his death, intentionally left incomplete to represent his life's
+untimely end due to AIDS. While the completed image itself may not be
+considered "artwork", I claim that the post as a whole does. In "completing"
+the original work, its defining characteristic is wiped away, and the story it
+tells alongside it. Donnel satirizes proponents of AI by imitating their
+boisterous claims about AI's usefulness, and does so in a setting where the
+soullessness of the AI-generated result is self-evident.
+{% endcapture %}
+{% include canvas-post.html date="Jan 29 6:43pm" body=response_mia %}
+
+{% capture response_justin %}
+Hi Justin!
+
+The amusing illustration you included reminded me of a similar comic, attached
+below, which also demonstrates how one's (financial) preconceptions can impact
+how they react to information. Have you ever found yourself (consciously or
+subconsciously) in a similar position?
+![Stock go up](assets/stock-go-up.jpeg)
+{% endcapture %}
+{% include canvas-post.html date="Feb 12 11:43am" body=response_justin %}
+
+
 ### Analysis
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
