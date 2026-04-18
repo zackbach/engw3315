@@ -58,6 +58,17 @@
 
     p {
       margin-bottom: 1.25rem;
+      text-align: justify;
+      hyphens: auto;
+      -webkit-hyphenate-limit-before: 4;
+      -webkit-hyphenate-limit-after: 4;
+      hyphenate-limit-chars: 10 4 4;
+      hyphenate-limit-lines: 2;
+    }
+
+    .title-block p {
+      text-align: center;
+      hyphens: none;
     }
 
     /* Highlighted text */
