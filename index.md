@@ -8,32 +8,29 @@ class: "ENGW 3315"
 
 ## Introductory Reflection
 
-Coming into ENGW 3315, I was searching for ways to strengthen the writing
-skills that are most frequently exercised by academics, with an eye towards a
-future career in academia. In particular, I originally wanted to practice
-technical writing as well as pedagogical explanations. As the semester
-continued, I realized that our online learning community was not necessarily
-the most appropriate audience for my technical writings (this seemingly did not
-stop me from trying :-P).
+Coming into ENGW 3315, I sought to strengthen the writing skills most
+frequently exercised by academics, with an eye towards a (potential) future
+career in academia. In particular, I hoped to practice both technical writing
+and pedagogical explanation. As the semester continued, I realized that our
+learning community was not always the most appropriate audience for my highly
+technical work (though this didn't always stop me from trying :-P).
 
-Around this time, I was working on a slide deck for a presentation that I was
-giving at Northeastern's Software Day, as well as reflecting on some of the
-previous talks that I have given. I recognized a common through line—the
-presentations of mine that were the best received (covering both educational
-and technical information) were those with an abundance of **visualizations**.
+To lean into the educational side, I thought back on the various lectures and
+presentations I have given during my time at Northeastern. I was able to
+recognize a common through line—the talks of mine that were the best received
+were (perhaps unsurprisingly) those with an abundance of **visualizations**.
 
-This realization came during a point in the semester where some of the
-assignments in this class involved creating visual compositions. I was
-inspired to pursue additional writings with visual components, and (in
-hindsight) found this through line recurring in some of my favorite writings of
-the semester.
+This realization came at a point in the semester where this class's assignments
+began calling for visual compositions. I was inspired to pursue additional
+writings with visual components, and (in hindsight) found this through line
+recurring across many of my favorite pieces from earlier in the semester.
 
-The selective portfolio below showcases my evolving use of visuals across my
-compositions throughout the semester. I have decided to organize my portfolio
-as a website to easily embed various types of media, as well as include a new
-data visualization recapping my experience interacting with the course (and our
-online learning community as a whole). Along the way, I will use these visual
-compositions to reflect on my broad experience with the course.
+The selective portfolio below showcases my evolving use of visuals throughout
+this semester. I have organized it as a website to easily embed various media,
+as well as to include a new (interactive!) data visualization recapping my
+experience interacting with our online learning community. Along the way, I use
+these visual compositions to reflect on my experience with the course as a
+whole.
 
 ---
 
