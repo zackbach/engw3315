@@ -254,10 +254,11 @@
   }
 
   function applyWidth(view) {
+    inner.style.width = '';
     if (view === 'daily') {
-      inner.style.width = datasets.daily.labels.length * DAILY_PX_PER_GROUP + 'px';
+      inner.style.flex = '0 0 ' + datasets.daily.labels.length * DAILY_PX_PER_GROUP + 'px';
     } else {
-      inner.style.width = '100%';
+      inner.style.flex = '1 1 0';
     }
   }
 
