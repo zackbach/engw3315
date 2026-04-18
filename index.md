@@ -6,7 +6,7 @@ class: "ENGW 3315"
 ---
 <!-- markdownlint-disable MD033 -->
 
-## Introductory Reflection
+## Introduction
 
 Coming into ENGW 3315, I sought to strengthen the writing skills most
 frequently exercised by academics, with an eye towards a (potential) future
@@ -36,7 +36,49 @@ whole.
 
 ## Highlighting Extra
 
-Maybe the extra or something?
+{% capture response1 %}
+The majority of mathematics textbooks follow a "<mark
+class="green">definition</mark>-<mark class="orange">theorem</mark>-<mark
+class="yellow">proof</mark>"
+structure, in which chapters consist of (cycles of) the following three phases:
+
+1. <mark class="green">Definition</mark>: a new mathematical object is defined,
+   and examples are given.
+2. <mark class="orange">Theorem</mark>: a theorem (mathematical proposition)
+   about that object is stated.
+3. <mark class="yellow">Proof</mark>: the theorem is proved rigorously.
+
+Often, there are many theorems and proofs about some newly defined mathematical
+object before moving onto the next definition. Some of these mathematical
+propositions are of lesser importance, perhaps only being proved to assist in
+another proof; such propositions are called _lemmas_ (technically, lemmata),
+rather than _theorems_.
+
+Recently, I have observed parallels between this common structure of
+mathematical writing and the structure I impose upon works as I actively read
+them. Specifically, I use the following highlighting scheme:
+
+1. Words and sentences highlighted in <mark class="green">green</mark> are
+   newly defined words and their corresponding definitions.
+2. Sentences highlighted in <mark class="orange">orange</mark> are the primary
+   claims that the author makes.
+3. Sentences highlighted in <mark class="yellow">yellow</mark> are most common,
+   representing key details and examples that support the primary claims.
+
+I have been using this highlighting scheme since high school; it seems that I
+have been (subconsciously) reading like a mathematician for many years.
+
+Now that I have drawn this connection, I am trying to consciously take
+inspiration from the structure of mathematical writing to improve my
+highlighting scheme. Specifically, I notice myself highlighting some minor
+claims (lemmas) in <mark class="orange">orange</mark>, but others—those which I
+(arbitrarily) deem less important—in <mark class="yellow">default
+yellow</mark>. I am trying to use <mark class="purple">purple</mark> to
+highlight these equivalents of lemmas, instead of implicitly promoting half of
+them to the status of theorems.
+{% endcapture %}
+{% include canvas-post.html date="Feb 1 10:18pm | Last reply Feb 2 11:12am" body=response1 %}
+
 
 ### Analysis or something
 

@@ -66,6 +66,23 @@
       hyphenate-limit-lines: 2;
     }
 
+    ol, ul {
+      margin: 0 0 1.25rem 0;
+      padding-left: 2rem;
+    }
+
+    ol { list-style: decimal outside; }
+    ul { list-style: disc outside; }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    li > ol, li > ul {
+      margin-top: 0.4rem;
+      margin-bottom: 0.4rem;
+    }
+
     .title-block p {
       text-align: center;
       hyphens: none;
@@ -76,7 +93,12 @@
       background: #fff3a8;
       padding: 0.1em 0.25em;
       border-radius: 2px;
+      color: inherit;
     }
+    mark.green  { background: #bfedd2; }
+    mark.orange { background: #ffb46f; }
+    mark.yellow { background: #fbeeb8; }
+    mark.purple { background: #eccafa; }
 
     /* Images and embeds */
     img {
@@ -129,6 +151,79 @@
       color: #555;
       font-style: italic;
     }
+    /* Canvas-style post */
+    .canvas-post {
+      border: 1px solid #dfe3e8;
+      border-radius: 6px;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      background: #fff;
+      font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #2d3b45;
+    }
+
+    .canvas-post__header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .canvas-post__avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background: #394b58;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.9rem;
+      overflow: hidden;
+    }
+
+    .canvas-post__avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin: 0;
+      border-radius: 0;
+      max-width: none;
+    }
+
+    .canvas-post__meta {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .canvas-post__name {
+      font-weight: 700;
+      color: #2d3b45;
+    }
+
+    .canvas-post__time {
+      font-size: 0.8rem;
+      color: #6b7780;
+    }
+
+    .canvas-post__body p {
+      text-align: left;
+      hyphens: none;
+      margin-bottom: 0.75rem;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+    }
+
+    .canvas-post__body p:last-child {
+      margin-bottom: 0;
+    }
+
     /* Chart */
     .chart-toggle {
       font-family: Georgia, "Times New Roman", serif;
