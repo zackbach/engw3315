@@ -210,9 +210,24 @@ confusing audiences.
 
 <iframe src="assets/timeline.pdf" width="100%" style="aspect-ratio: 16/9; margin-bottom: 0.25rem;" frameborder="0"></iframe>
 
-<iframe width="75%" height="300px" src="https://www.youtube.com/embed/crq0q88R-Uc" style="display: block; margin: 0 auto;" frameborder="0" allowfullscreen></iframe>
+<iframe width="75%" height="300px" src="https://www.youtube.com/embed/crq0q88R-Uc" style="display: block; margin: 1.5rem auto;" frameborder="0" allowfullscreen></iframe>
 
-asd
+Taking yet another step further, I voluntarily decided to use a visual medium
+when composing my "Writing Timeline". I chose to do so, as I enjoyed working on
+the infographics above, and (as mentioned earlier) had just reflected on the
+role that visuals play in clear academic communication. I think that this
+decision strengthened my timeline, allowing readers to bounce back and forth
+between selected excerpts and my commentary. In hindsight, perhaps a
+slideshow/PDF was not the most effective visual medium; a website (like this
+one!) could have been more convenient.
+
+This assignment gave me the encouragement to finally dig through the large
+collection of past writings that I have been (somewhat paranoidly) hoarding. I
+thoroughly appreciated doing so, as it let me dig up a handful of lost
+memories and reflect on my growth over the last ~10 years as a writer. The
+timeline itself will serve as a useful collection of "greatest hits", allowing
+me to reflect in the future without having to once again sift through gigabytes
+of old data.
 
 ---
 
@@ -238,8 +253,16 @@ asd
 
 <script src="assets/chart.js"></script>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur.
+<!-- 
+while reflecting on the stuff above, was reminded of my time tracking visualization
+i wanted to visualize some of my interactions with this course in a similar way,
+to track my engagement throughout the semester. somewhat for my curiosity,
++ ellen's suggestion in the post.
+
+notably:
+- a lot of comments! which is good and matches my favorite part of the course (makes sense that i did it a lot)
+- most time for midterm and for writing social justice. makes sense bc that is when i did the most reading
+- tended to be bursty with work, whih also makes sense given my schedule
+
+one little additional paragraph about how this was like a fun course!
+ -->
