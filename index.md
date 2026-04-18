@@ -34,7 +34,7 @@ whole.
 
 ---
 
-## Highlighting Extra
+## Styling Textual Responses
 
 {% capture response1 %}
 The majority of mathematics textbooks follow a "<mark
@@ -77,18 +77,30 @@ yellow</mark>. I am trying to use <mark class="purple">purple</mark> to
 highlight these equivalents of lemmas, instead of implicitly promoting half of
 them to the status of theorems.
 {% endcapture %}
-{% include canvas-post.html date="Feb 1 10:18pm | Last reply Feb 2 11:12am" body=response1 %}
+{% include canvas-post.html date="Feb 1 10:18pm | Last reply Feb 2 11:12am"
+body=response1 %}
 
+This was one of my first "extra" writings of the semester, and (as far as I can
+tell, after reviewing all of my posts) my first composition to utilize visual
+components to make a more compelling case. Here, the subject matter of the
+post—the highlighting scheme I use when marking up text—is inherently visual,
+which is reflected by the styling of the post. Furthermore, the response is
+about developing an analogy; the highlighting serves to visually demonstrate
+that analogy, marking up corresponding aspects with the same color.
 
-### Analysis or something
+This response is one of my favorites of the semester, as it serves as an
+example of a(n unrelated) insight gained by deeply engaging with the course
+materials. I made this observation while reading carefully—both as a writer,
+and as a mathematician—following the advice of Bunn.
 
-Not sure if I actually want to have a subsection but I'll workshop.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur.
+Many of my other posts throughout the semester similarly use styling to
+communicate effectively. In particular, I am quite fond of shoving tangential
+comments and information into footnotes, as to avoid distracting readers on
+their first go-through. I also have been careful to use blockquotes to style
+quotations, in an attempt to clearly discern which ideas are my own and what
+specifically I am responding to. External communications with fellow students
+taking this course indicate that these styling choices have been (amusing and)
+effective in increasing the readability of my compositions.
 
 ---
 
