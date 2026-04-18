@@ -34,7 +34,7 @@ whole.
 
 ---
 
-## Styling Textual Responses
+## Styling Textual Compositions
 
 {% capture response1 %}
 The majority of mathematics textbooks follow a "<mark
@@ -104,9 +104,7 @@ effective in increasing the readability of my compositions.
 
 ---
 
-## Responses
-
-Two separate responses going in here probably
+## Visualizations in Responses
 
 {% capture response_mia %}
 
@@ -128,6 +126,10 @@ soullessness of the AI-generated result is self-evident.
 {% endcapture %}
 {% include canvas-post.html date="Jan 29 6:43pm" body=response_mia %}
 
+asdf
+
+### A Visual Response
+
 {% capture response_justin %}
 Hi Justin!
 
@@ -139,14 +141,7 @@ subconsciously) in a similar position?
 {% endcapture %}
 {% include canvas-post.html date="Feb 12 11:43am" body=response_justin %}
 
-
-### Analysis
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur.
+asdf
 
 ---
 
