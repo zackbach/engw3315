@@ -233,6 +233,14 @@ of old data.
 
 ## Visualizing Engagement
 
+One of my favorite creations from my time in high school, dug up while piecing
+together the timeline above, was my visualization of my tracked time. Time
+tracking is still one of my favorite habits, and one that lets me reflect on
+things very quantitatively (which I do in weekly "time tracking reviews").
+
+I wanted to conclude this reflection by creating a new visual to capturing these
+quantitative insights:
+
 <div style="text-align: center; margin-bottom: 0.75rem;">
   <button class="chart-toggle active" id="btn-weekly" onclick="setView('weekly')">Weekly</button>
   <button class="chart-toggle" id="btn-daily" onclick="setView('daily')">Daily</button>
@@ -253,16 +261,28 @@ of old data.
 
 <script src="assets/chart.js"></script>
 
-<!-- 
-while reflecting on the stuff above, was reminded of my time tracking visualization
-i wanted to visualize some of my interactions with this course in a similar way,
-to track my engagement throughout the semester. somewhat for my curiosity,
-+ ellen's suggestion in the post.
+<p class="chart-caption">
+  Time spent on ENGW 3315 each week, alongside categorized course contributions.
+  Hover over any bar to see a breakdown by assignment, and toggle between weekly and daily views.
+  The "Daily" view requires horizontal scrolling.
+  Tracked time may not be entirely accurate, and contributions were categorized manually.
+</p>
 
-notably:
-- a lot of comments! which is good and matches my favorite part of the course (makes sense that i did it a lot)
-- most time for midterm and for writing social justice. makes sense bc that is when i did the most reading
-- tended to be bursty with work, whih also makes sense given my schedule
+Some notable observations:
+- Unsurprisingly, the majority of my contributions came in the form of
+  comments. As discussed earlier, interacting with my peers was my favorite
+  part of this course; it is no wonder I spent the most time doing so.
+- The most time I spent in one week on an assignment was for the "Writing
+  Social Justice" assignment. Here, I was certainly writing to understand,
+  rather than writing to teach. I spent much of this time reading and
+  re-reading excerpts from the literature on critical pedagogy.
+- Despite a relatively consistent distribution of time spent at the weekly
+  scale, looking at individual days shows that much of my contributions were
+  concentrated in "spiky" working sessions. This makes sense, given the
+  (unfortunately packed) structure of my schedule this semester.
 
-one little additional paragraph about how this was like a fun course!
- -->
+---
+
+Thank you, Ellen, for a wonderful semester. And thank you to anyone who has
+read this far! This course has consistently been a much-needed reprieve from
+rest of these last few, dense months.
