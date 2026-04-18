@@ -206,23 +206,17 @@ confusing audiences.
 
 ---
 
-## Writing timeline
+## Visuals, Voluntarily
 
 <iframe src="assets/timeline.pdf" width="100%" style="aspect-ratio: 16/9; margin-bottom: 0.25rem;" frameborder="0"></iframe>
 
 <iframe width="75%" height="300px" src="https://www.youtube.com/embed/crq0q88R-Uc" style="display: block; margin: 0 auto;" frameborder="0" allowfullscreen></iframe>
 
-### Commentary
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur.
+asd
 
 ---
 
-## Data visualization
+## Visualizing Engagement
 
 <div style="text-align: center; margin-bottom: 0.75rem;">
   <button class="chart-toggle active" id="btn-weekly" onclick="setView('weekly')">Weekly</button>
@@ -243,18 +237,6 @@ fugiat nulla pariatur.
 </div>
 
 <script src="assets/chart.js"></script>
-
-### Still not sure about sub-headings
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur.
-
----
-
-## Conclusion / reflection
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
