@@ -174,19 +174,35 @@ face-to-face interaction.
 
 ---
 
-## Curry-Howard Infographic
+## Primarily Visual, Yet Technical
 
 ![Propositions as Types](assets/prop-as-type.jpg)
 
 ![Proofs as Programs](assets/proof-as-prog.jpg)
 
-### More commentary
+The post above has an importance difference from those showcased before it; in
+particular, it is a visual augmented by text, as opposed to text enhanced by
+visuals. In this post, I exercised my ability to translate a textual response
+into a more digestible, visual format. The juxtaposition of logical formulae
+and program snippets highlights how the two languages can be translated
+seamlessly between each other.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur.
+Despite this post being too technical in hindsight, it (as identified on the
+midterm) was and continues to be one of the most interesting compositions of
+this semester:
+1. I had a clear and restrictive audience and rhetorical situation that I
+   tailored my submission to, a learning goal of the course.
+2. I was able to select a topic and audience that relates to my interests in
+   computing and teaching.
+3. I made some interesting technical observations about the limitations of
+   union types for logical reasoning.
+
+These are all skills and observations that I will be able to use moving
+forward. At a meta level, I am satisfied with the fact that I was able to
+identify that some of my posts were becoming too technically involved and
+adjust accordingly for the remainder of the semester. In many situations—such
+as when teaching—adjusting the level of rigor or pacing is important to avoid
+confusing audiences.
 
 ---
 
