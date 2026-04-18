@@ -104,7 +104,7 @@ effective in increasing the readability of my compositions.
 
 ---
 
-## Visualizations in Responses
+## Visualizations in Interactions
 
 {% capture response_mia %}
 
@@ -126,9 +126,31 @@ soullessness of the AI-generated result is self-evident.
 {% endcapture %}
 {% include canvas-post.html date="Jan 29 6:43pm" body=response_mia %}
 
-asdf
+<blockquote class="twitter-tweet" data-theme="dark" data-dnt="true" align="center"><p lang="en" dir="ltr">The story behind this painting is so sad! 😢<br>Now using AI we can complete what he couldn&#39;t finish! ❤️ <a href="https://t.co/RuASoTfFdk">https://t.co/RuASoTfFdk</a> <a href="https://t.co/uAwM6SBUGW">pic.twitter.com/uAwM6SBUGW</a></p>&mdash; Donnel (@DonnelVillager) <a href="https://twitter.com/DonnelVillager/status/1741394747594318275?ref_src=twsrc%5Etfw">December 31, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-### A Visual Response
+My favorite aspect of ENGW 3315 was reading and interacting with the posts made
+by my peers each week. In particular, I appreciated being given opportunities
+to  communicate back-and-forth with my peers in discussion threads. The comment
+displayed above was drawn from the end of one of these threads, in which Mia
+Yim and I were discussing the ethical implications surrounding "AI art".
+
+While the comment above does not use visuals of my own, it is centered around a
+work of art—specifically, one with many meta-level considerations about art as
+a medium and the role humans play in making it. This post exemplifies some of
+my opinions on LLM- and human-generated art (and visualizations in general) in
+our increasingly (and disturbingly) AI-first world.
+
+Putting visuals aside temporarily, this comment is archetypical of another
+style of writing that this class allowed and encouraged me to engage in:
+writing to _understand_. In most academic settings, I find myself writing to
+_teach_, using text as a medium to communicate ideas that I have thought deeply
+about. In contrast, writing this comment forced me to articulate some of the
+nebulous thoughts I had about Donnel's work of art and "AI art" more broadly.
+Since writing this post, I have found myself referring back to it, as it
+effectively captures my ideas on a nuanced and confusing topic.
+
+### A Visual Interaction
 
 {% capture response_justin %}
 Hi Justin!
@@ -141,13 +163,19 @@ subconsciously) in a similar position?
 {% endcapture %}
 {% include canvas-post.html date="Feb 12 11:43am" body=response_justin %}
 
-asdf
+Both short and sweet, this comment illustrates my increasing comfort with using
+visuals not just to accompany text, but as the primary contribution of the
+composition itself. This comic is not my own, but one of my favorites. In this
+post and in many others like it, I linked out to interesting visuals, blog
+posts, and articles for my peers to interact with. Doing so (at least for me)
+helped our virtual class feel more like a community, despite a lack of
+face-to-face interaction.
 
 ---
 
 ## Curry-Howard Infographic
 
-![Propositions as Types](assets/prop-as-type.jpg){: .img-small}
+![Propositions as Types](assets/prop-as-type.jpg)
 
 ![Proofs as Programs](assets/proof-as-prog.jpg)
 
